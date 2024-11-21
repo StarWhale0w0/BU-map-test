@@ -1,0 +1,17 @@
+graphhopper:
+  datareader.file: ./data/osm/map.osm.pbf
+  graph.location: ./graph-cache
+  profiles:
+    - name: car
+      vehicle: car
+      weighting: fastest
+      turn_costs: true
+    - name: foot
+      vehicle: foot
+      weighting: shortest
+    - name: bike
+      vehicle: bike
+      weighting: shortest
+  prepare.ch.weightings: fastest
+  routing.ch.disabling_allowed: true
+  transit: true

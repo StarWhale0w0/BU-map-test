@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bumap">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="BU Map"
+        android:theme="@style/Theme.BUMAP"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true">
+
+        <!-- MainActivity 설정 -->
+        <activity
+            android:name=".MainActivity"
+            android:label="BU Map"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- RouteActivity 설정 -->
+        <activity
+            android:name=".RouteActivity"
+            android:label="Route Activity"
+            android:exported="true">
+            <!-- 필요에 따라 인텐트 필터 추가 가능 -->
+        </activity>
+
+        <!-- TransitActivity 설정 (필요없으면 삭제 가능) -->
+        <activity
+            android:name=".TransitActivity"
+            android:label="Transit Activity"
+            android:exported="true">
+            <!-- 필요에 따라 인텐트 필터 추가 가능 -->
+        </activity>
+
+    </application>
+
+</manifest>
